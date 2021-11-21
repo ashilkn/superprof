@@ -1,0 +1,654 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    height: 4rem;
+    position: fixed;
+    width: 100%; 
+    top:0;
+    background: white;
+    z-index: 999;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header .logo{
+    color: rgb(254,98,99);
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header > div{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p, .side-nav a{
+    color: rgb(68,68,68);
+    font-weight: 500;
+    font-size: .9em;
+    text-align: center;
+}
+
+.side-nav a:hover{
+    color: rgb(254,98,99);
+    transition: .2s;
+}
+
+header div div{
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(254,98,99);
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+header .side-nav{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.primary-content{
+    width: 100%;
+    background: rgb(254,241,240); 
+}
+
+.primary-content > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 300px;
+}
+
+.primary-content > div div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 35%;
+    padding-bottom: 500px;
+}
+
+.primary-content > div div h1 {
+    font-size: 3.6rem;
+    color: rgb(19,18,19);
+    margin: 10px 0;
+}
+
+.primary-content > div div h6 {
+    font-size: 1.1rem;
+    color: rgb(19,18,19);
+    font-weight: 500;
+    margin: 10px 0 40px;
+}
+
+.primary-content span {
+    color:rgb(254,98,99);
+}
+
+.primary-content > div div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 1.5rem;
+    width:100%;
+    height: 50px;
+}
+
+.primary-content div div div div{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.primary-content button {
+    background-color: rgb(254,98,99);
+    color: white;
+    border: none;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    width: 60%;
+}
+
+.tutor-vertical-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.primary-content ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: -180px;
+}
+
+.primary-content li{
+    margin: 0 12px;
+}
+
+main .tutor-1, main .tutor-2, main .tutor-3, main .tutor-4{
+    width: 160px;
+    height:640px;
+    border-radius: 5rem;
+}
+main .tutor-2{
+    background-image: url('images/tutor2.jpg');
+}
+main .tutor-3{
+    background-image: url('images/tutor3.jpg');
+}
+main .tutor-4{
+    background-image: url('images/tutor4.jpg');
+}
+
+.tutor-vertical-photo li:nth-child( odd ){
+    animation: tutor-animation 8s ease-in-out  infinite;
+}
+
+.tutor-vertical-photo li:nth-child( even ){
+    animation: tutor-animation 8s ease-in-out 4s  infinite;
+}
+
+@keyframes tutor-animation {
+    0%{
+       transform: translateY(0px); 
+    }
+    50%{
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.tutor-vertical-photo ul li{
+    position: relative !important;
+}
+
+.avinash, .manisha, .payal, .karuna{
+    position: absolute;
+    left:20px !important;
+}
+
+.avinash, .manisha{
+    top:420px !important;
+}
+
+.karuna{
+    top:50px !important;
+}
+
+.payal {
+    top: 400px !important;
+}
+
+.secondary-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 50px;
+    background-image: linear-gradient(180deg, rgb(254,241,240) 0%, rgb(254,241,240) 90%, white 100%);
+}
+
+.secondary-content > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    justify-content: center;
+}
+
+.secondary-content > div h1{
+    font-size: 3.6rem;
+    color: rgb(19,18,19);
+    margin: 10px 0;
+}
+
+.secondary-content span{
+    color:rgb(254,98,99);
+}
+
+.secondary-content > div h6{
+    font-size: 1.1rem;
+    color: rgb(19, 19, 19);
+    font-weight: 500;
+    margin: 10px 0 40px;
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.secondary-content button{
+    background-color: rgb(254,98,99);
+    color: white;
+    border: none;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    width: 28%;
+}
+
+.live-reviews{
+    /* height: 500px; */
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+    margin: 0 100px 0 0 !important;
+    transform: rotate(-5deg);
+}
+
+.secondary-content ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 30px;
+}
+
+.secondary-content li{
+    height: 13rem;
+    width: 17rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin: 30px 0;
+    padding: 40px;
+}
+
+main .live-reviews img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.live-reviews .name-desig-rating{
+    display: flex;
+    align-items: center;
+}
+
+.live-reviews .name-desig-rating p{
+    margin:0;
+    font-size: .9rem;
+    font-weight: normal;
+    padding-left: 2px;
+}
+
+.live-reviews .name-desig-rating svg{
+    color: rgb(255,180,1);
+    padding: 2px;
+}
+
+.live-reviews .description{
+    font-size: .9em;
+    color: rgb(30, 30, 30);
+}
+
+.live-reviews .description-time{
+    font-size: .8em;
+}
+
+.learning-has-never-been{
+    padding: 300px 0px 100px 200px;
+    font-size: 1.2rem;
+    color: rgb(18,18,18);
+    font-weight: normal;
+}
+
+.search-content-organize{
+
+}
+
+.search-and-video, .organize-and-video, .contact-and-video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.search-and-video div, .organize-and-video div, .contact-and-video div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-and-video div div, .organize-and-video div div, .contact-and-video div div {
+    display: block;
+}
+
+.search-and-video div video, .organize-and-video div video, .contact-and-video div video {
+    display: block;
+    margin: 0 0 0 100px;
+    border-radius: 2rem;
+}
+
+main .contact-and-video div div{
+    margin-left: 50px;
+    margin-right: 150px;
+}
+
+main .contact-and-video div video{
+    margin-right: 50px;
+}
+
+.student-and-teacher{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 250px 0;
+}
+
+.student-and-teacher img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4rem;
+}
+
+.student-and-teacher p{
+    margin: 10px 0;
+}
+
+.student-and-teacher h6{
+    margin: 20px 0 5px 0;
+    font-size: 1em;
+}
+
+.student-and-teacher b{
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+.subjects-to-explore{
+    color: white;
+    background-color: black;
+    overflow: hidden;
+    height: 1000px;
+}
+
+.subjects-to-explore h1{
+    margin:150px 0 50px 150px;
+    font-size: 2.5rem
+}
+
+.subjects-to-explore ul{
+    list-style: none;
+    display: flex;
+    margin: 2rem 0;
+    padding: 0;
+    overflow-x: scroll;
+    transform: rotate(-3deg);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.subjects-to-explore ul::-webkit-scrollbar {
+    display: none;
+}
+
+/* @keyframes collage-translate {
+    0%{
+        transform: translateX();
+    }
+    50%{
+
+    }
+    100%{
+
+    }
+} */
+
+.subjects-to-explore li{
+    padding: 16px;
+    margin: 0 .7rem;
+    min-width: 8.5rem;
+    height: 9.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subjects-to-explore li:nth-child(1){
+    background-image: url('images/academic-tutoring.jpg');
+}
+
+.subjects-to-explore li:nth-child(2){
+    background-image: url('images/accounting.jpg');
+}
+
+.subjects-to-explore li:nth-child(3){
+    background-image: url('images/arabic.jpg');
+}
+
+.subjects-to-explore li:nth-child(4){
+    background-image: url('images/drawing.jpg');
+}
+
+.subjects-to-explore li:nth-child(5){
+    background-image: url('images/finance.jpg');
+}
+
+.subjects-to-explore li:nth-child(6){
+    background-image: url('images/geographical-history.jpg');
+}
+
+.subjects-to-explore li:nth-child(7){
+    background-image: url('images/german.jpg');
+}
+
+.subjects-to-explore li:nth-child(8){
+    background-image: url('images/Maths.jpg');
+}
+
+.subjects-to-explore li:nth-child(9){
+    background-image: url('images/microsoft-excel.jpg');
+}
+
+.subjects-to-explore li:nth-child(10){
+    background-image: url('images/sewing.jpg');
+}
+
+.subjects-to-explore li:nth-child(11){
+    background-image: url('images/arabic.jpg');
+}
+
+.subjects-to-explore li:nth-child(12){
+    background-image: url('images/accounting.jpg');
+}
+
+.subjects-to-explore li p{
+    color: white;
+    padding: 0;
+    margin: 0;
+    mix-blend-mode:luminosity;
+}
+
+main .you-can-become{
+    
+}
+
+.you-can-become-main{
+    position: relative;
+    left: 200px;
+    width: 1100px !important;
+    height: 420px;
+    background:linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgb(0, 0, 0, 0)), url('images/dancer.jpg');
+    background-position: center;
+    border-radius: 4rem;
+    background-position-y: 65%;
+    background-position-x: 30%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 200px 0;
+}
+
+.you-can-become{
+    position: absolute;
+    left:100px;
+    top:30px;
+}
+
+.you-can-become-main .you-can-become:nth-child(1){
+    color: white;
+}
+
+.you-can-become-main .you-can-become:nth-child(1) h1{
+    font-size: 3.5rem;
+}
+
+.you-can-become-main .you-can-become:nth-child(1) h6{
+    font-size: 1rem;
+}
+
+.you-can-become-main .you-can-become:nth-child(1) button{
+    color: white;
+    background-color: rgb(254,98,99);
+    border: none;
+    height: 50px;
+    width: 35%;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.tutor-name-desig-review{
+    display: flex;
+    background: rgb(255,255,255,1);
+    flex-direction: column !important; 
+    width: 100px !important;
+    padding: 11px !important; 
+    border-radius: 1rem !important;
+    position: absolute;
+    top:190px;
+    right: 250px;
+    align-items: flex-start !important;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 15px -3px;
+}
+
+.tutor-name-desig-review h5{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.tutor-name-desig-review p{
+    font-size: .7rem;
+    font-weight: 100;
+    margin:5px 0 3px 0;
+}
+
+.review{
+    display: flex;
+    align-items: center;
+    justify-content: space-around !important;
+    padding: 0 !important;
+}
+
+.review svg{
+   color:rgb(255,181,0); 
+   width: 12px;
+   height: 12px;
+}
+
+.tutor-name-desig-review span{
+    color: gray;
+}
+
+.learn-explore{
+    font-size: 4rem;
+    margin-left: 200px;
+}
+
+.places-services{
+    display: flex;
+    justify-content: space-between;
+    margin: 200px;
+    padding: 50px;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px -3px;
+}
+
+.places-services p{
+    font-weight: 100;
+    color: rgb(44, 44, 44, 0.8);
+    margin-left: 2px;
+}
+
+.places-services div b{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.places-services div p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.places-services div b:hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 100px;
+}
+
+footer .footer-div1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .footer-div1 b{
+    font-size: 1.1em;
+    display: block;
+    padding-bottom: 5px;
+}
+
+footer .footer-div1 p{
+    font-size: .9em;
+    padding-left: 2px;
+}
+
+footer .footer-div1 p, footer svg:hover{
+    cursor: pointer;
+}
+
+footer svg{
+    margin: 10px 10px 0 0;
+    transition: 0.2s ease;
+}
+
+footer svg:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+button{
+    cursor: pointer;
+}
